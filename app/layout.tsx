@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {export const metadata: Metadata = {
+export const metadata: Metadata = {
   title:
     "Toklio - TikTok Video Downloader Without Watermark | HD TikTok Saver",
 
