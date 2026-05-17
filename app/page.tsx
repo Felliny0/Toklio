@@ -17,7 +17,12 @@ const handleDownload = async () => {
 
     const video = response.data.data.play
 
-    window.location.href = video
+    const a = document.createElement("a")
+a.href = video
+a.download = "toklio.mp4"
+document.body.appendChild(a)
+a.click()
+document.body.removeChild(a)
   } catch (err) {
     alert("Download failed")
   } finally {
@@ -98,6 +103,12 @@ const handleDownload = async () => {
         </div>
 
         {/* STATS */}
+        {/* AD BANNER */}
+<div className="w-full max-w-5xl mt-10">
+  <div className="bg-white/5 border border-white/10 rounded-3xl h-32 flex items-center justify-center text-zinc-500 backdrop-blur-xl">
+    Advertisement
+  </div>
+</div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14 w-full max-w-4xl">
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-5 backdrop-blur-xl">
@@ -195,6 +206,12 @@ const handleDownload = async () => {
       </section>
 
       {/* FOOTER */}
+      {/* BOTTOM AD */}
+<div className="px-6 md:px-10 pb-10">
+  <div className="max-w-6xl mx-auto bg-white/5 border border-white/10 rounded-3xl h-40 flex items-center justify-center text-zinc-500 backdrop-blur-xl">
+    Ad Space
+  </div>
+</div>
       <footer className="border-t border-white/10 py-8 text-center text-zinc-500">
         © 2026 Toklio. All rights reserved.
       </footer>
