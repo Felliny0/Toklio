@@ -114,8 +114,19 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
-  );
-}
+    > 
+  
+  
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2248611477017964"
+      crossOrigin="anonymous"
+    ></script>
+
+    <body className="min-h-full flex flex-col">
+      {children}
+    </body>
+  </html>
+);
+  
+
