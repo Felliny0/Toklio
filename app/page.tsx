@@ -17,7 +17,7 @@ const handleDownload = async () => {
 
     const video = response.data.data.play
 
-    window.open(video, "_blank")
+    window.location.href = video
   } catch (err) {
     alert("Download failed")
   } finally {
