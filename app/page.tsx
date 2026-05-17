@@ -213,9 +213,26 @@ document.body.removeChild(a)
   </div>
 </div>
       <footer className="border-t border-white/10 py-8 text-center text-zinc-500">
-        © 2026 Toklio. All rights reserved.
-      </footer>
 
+  <div className="flex items-center justify-center gap-6 mb-4 text-white">
+
+    <a href="/privacy" className="hover:text-purple-400 transition">
+      Privacy
+    </a>
+
+    <a href="/terms" className="hover:text-purple-400 transition">
+      Terms
+    </a>
+
+    <a href="/contact" className="hover:text-purple-400 transition">
+      Contact
+    </a>
+
+  </div>
+
+  ©️ 2026 Toklio. All rights reserved.
+
+</footer>
     </main>
   );
 }
