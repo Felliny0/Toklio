@@ -19,19 +19,10 @@ const data = await response.json()
 
     const video = data.data.play
 
-    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent)
-
-if (isIOS) {
-  window.open(video, "_blank")
-} else {
-  const a = document.createElement("a")
-  a.href = video
-  a.download = "toklio.mp4"
-  document.body.appendChild(a)
-  a.click()
-  document.body.removeChild(a)
+    window.location.href = video
+  
 }
-  } catch (err) {
+   catch (err) {
     alert("Download failed")
   } finally {
     setLoading(false)
