@@ -38,9 +38,11 @@ document.body.removeChild(a)
       
       {/* NAVBAR */}
       <nav className="flex items-center justify-between px-6 md:px-10 py-6 border-b border-white/10 backdrop-blur-xl">
-        <h1 className="text-3xl font-black tracking-tight">
-          Toklio
-        </h1>
+        <img
+  src="/icon.png"
+  alt="Toklio"
+  className="h-14 w-auto"
+/>
 
         <div className="hidden md:flex items-center gap-8 text-zinc-300">
           <a href="#" className="hover:text-white transition">
