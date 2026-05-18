@@ -63,7 +63,7 @@ document.body.removeChild(a)
   <img
     src="/icon2.png"
     alt="Instagram"
-    className="w-14 h-10 rounded-full"
+    className="w-7 h-5 rounded-full"
   />
 
   <span>Instagram Downloader</span>
