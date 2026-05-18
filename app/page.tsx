@@ -11,9 +11,11 @@ const handleDownload = async () => {
   try {
     setLoading(true)
 
-    const response = await axios.get(
-  `https://www.tikwm.com/api/?url=${encodeURIComponent(url)}`
+    const response = await fetch(
+  https://www.tikwm.com/api/?url=${encodeURIComponent(url)}
 )
+
+const data = await response.json()
 
     const video = response.data.data.play
 
