@@ -56,9 +56,17 @@ document.body.removeChild(a)
           </a>
         </div>
 
-        <button className="bg-purple-500 hover:bg-purple-400 transition px-5 py-2 rounded-2xl font-semibold shadow-lg shadow-purple-500/20">
-          Start Now
-        </button>
+        <button className="flex items-center gap-3 bg-gradient-to-r from-pink-500 to-purple-500 hover:scale-105 transition px-5 py-2 rounded-2xl font-semibold shadow-lg shadow-pink-500/20">
+
+  <img
+    src="/icon.png"
+    alt="Instagram"
+    className="w-6 h-6 rounded-full"
+  />
+
+  <span>Instagram Downloader</span>
+
+</button>
       </nav>
 
       {/* HERO */}
