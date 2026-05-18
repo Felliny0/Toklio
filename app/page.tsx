@@ -19,7 +19,7 @@ const data = await response.json()
 
     const video = data.data.play
 
-    window.location.href = video
+    window.open(video, "_blank")
   
 }
    catch (err) {
