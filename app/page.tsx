@@ -19,7 +19,12 @@ const data = await response.json()
 
     const video = data.data.play
 
-    window.open(video, "_blank")
+    const a = document.createElement("a")
+a.href = video
+a.download = "toklio.mp4"
+document.body.appendChild(a)
+a.click()
+document.body.removeChild(a)
   
 }
    catch (err) {
