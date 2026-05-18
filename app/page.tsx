@@ -41,7 +41,7 @@ document.body.removeChild(a)
         <img
   src="/icon.png"
   alt="Toklio"
-  className="h-14 w-auto"
+  className="h-18 w-auto"
 />
 
         <div className="hidden md:flex items-center gap-8 text-zinc-300">
