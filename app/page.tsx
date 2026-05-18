@@ -12,12 +12,12 @@ const handleDownload = async () => {
     setLoading(true)
 
     const response = await fetch(
-  https://www.tikwm.com/api/?url=${encodeURIComponent(url)}
+  `https://www.tikwm.com/api/?url=${encodeURIComponent(url)}`
 )
 
 const data = await response.json()
 
-    const video = response.data.data.play
+    const video = data.data.play
 
     const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent)
 
